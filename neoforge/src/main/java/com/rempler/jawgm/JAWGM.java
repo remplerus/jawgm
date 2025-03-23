@@ -1,6 +1,5 @@
 package com.rempler.jawgm;
 
-import com.rempler.jawgm.CommonClass;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.player.Inventory;

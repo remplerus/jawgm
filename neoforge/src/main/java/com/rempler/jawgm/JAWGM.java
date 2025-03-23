@@ -17,14 +17,7 @@ import net.neoforged.neoforge.event.tick.PlayerTickEvent;
 public class JAWGM {
 
     public JAWGM(IEventBus eventBus) {
-
-        // Use NeoForge to bootstrap the Common mod.
-        Constants.LOG.info("Hello NeoForge world!");
-        CommonClass.init();
-
-        // Register the event bus
         NeoForge.EVENT_BUS.addListener(this::onLevelEvent);
-
     }
 
     private void onLevelEvent(PlayerTickEvent.Pre event) {

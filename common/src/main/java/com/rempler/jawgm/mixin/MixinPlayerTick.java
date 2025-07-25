@@ -32,16 +32,16 @@ public class MixinPlayerTick {
                     }
                     if (serverPlayer.getMainHandItem().is(Items.BUCKET) || serverPlayer.getOffhandItem().is(Items.BUCKET)) {
                         if (serverPlayer.getOffhandItem().is(Items.BUCKET)) {
-                            CommonClass.newFunction(inventory.offhand, serverPlayer.getOffhandItem().getCount(), Items.BUCKET);
+                            CommonClass.gainWater(inventory.offhand, serverPlayer.getOffhandItem().getCount(), Items.BUCKET);
                         } else {
-                            CommonClass.newFunction(inventory.items, serverPlayer.getMainHandItem().getCount(), Items.BUCKET);
+                            CommonClass.gainWater(inventory.items, serverPlayer.getMainHandItem().getCount(), Items.BUCKET);
                         }
                         inventory.add(Items.WATER_BUCKET.getDefaultInstance());
                     } else if (serverPlayer.getMainHandItem().is(Items.GLASS_BOTTLE) || serverPlayer.getOffhandItem().is(Items.GLASS_BOTTLE)) {
                         if (serverPlayer.getOffhandItem().is(Items.GLASS_BOTTLE)) {
-                            CommonClass.newFunction(inventory.offhand, serverPlayer.getOffhandItem().getCount(), Items.GLASS_BOTTLE);
+                            CommonClass.gainWater(inventory.offhand, serverPlayer.getOffhandItem().getCount(), Items.GLASS_BOTTLE);
                         } else {
-                            CommonClass.newFunction(inventory.items, serverPlayer.getMainHandItem().getCount(), Items.GLASS_BOTTLE);
+                            CommonClass.gainWater(inventory.items, serverPlayer.getMainHandItem().getCount(), Items.GLASS_BOTTLE);
                         }
                         inventory.add(PotionContents.createItemStack(Items.POTION, Potions.WATER));
                     }

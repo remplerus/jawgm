@@ -5,7 +5,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
 public class CommonClass {
-    public static void newFunction(NonNullList<ItemStack> items, int count, Item item) {
+    public static void gainWater(NonNullList<ItemStack> items, int count, Item item) {
         if (count == 1) {
             for (int i = 0; i < items.size(); i++) {
                 if (items.get(i).is(item)) {

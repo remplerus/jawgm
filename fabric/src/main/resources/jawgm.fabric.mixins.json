@@ -4,9 +4,7 @@
   "package": "com.rempler.jawgm.mixin",
   "refmap": "${mod_id}.refmap.json",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [
-    "MixinPlayerTick"
-  ],
+  "mixins": [],
   "client": [],
   "server": [],
   "injectors": {
